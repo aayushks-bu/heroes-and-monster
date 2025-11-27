@@ -28,32 +28,32 @@ Your goal is to survive, defeat monsters, and level up infinitely.
 
 # Features
 
-## 🎲 Dynamic World
+## Dynamic World
 - Randomly generated grid map (4×4 to 20×20)  
 - Common spaces, Markets, and Inaccessible walls  
 - Party marker (**P**) displayed in purple  
 - Clean, color-coded terminal UI  
 
-## ⚔️ Turn-Based Combat
+## Turn-Based Combat
 - Physical attacks, spells (Fire, Ice, Lightning), potions, and equipment  
 - Tactical monster abilities:
   - **Dragons** → High damage  
   - **Exoskeletons** → High defense  
   - **Spirits** → High dodge  
 
-## 🛒 Market System
+## Market System
 Buy/sell:
 - Weapons  
 - Armor  
 - Spells  
 - Potions  
 
-## 📈 RPG Progression
+## RPG Progression
 - Heroes level up with increasing stats  
 - Class-favored stats grow faster (+10%)  
 - HP/MP refill on level-up  
 
-## 🖥️ Smart UI
+## Smart UI
 - ANSI color-coded messages  
 - Aligned ASCII tables for stats & items  
 - Clean grid display  
@@ -64,7 +64,7 @@ Buy/sell:
 
 # Game Structure
 
-## 🌍 The World
+## The World
 
 | Tile Type     | Symbol | Description                      |
 |---------------|--------|----------------------------------|
@@ -74,7 +74,7 @@ Buy/sell:
 | Party         | P      | Shows your current location      |
 
 
-## 🧙 Heroes
+## Heroes
 
 | Class     | Str  | Dex  | Agi  | Description                  |
 |-----------|------|------|------|------------------------------|
@@ -83,7 +83,7 @@ Buy/sell:
 | Paladin   | High | High | Med  | Balanced tank/DPS hybrid     |
 
 
-## 👹 Monsters
+## Monsters
 
 | Type        | Specialty        |
 |-------------|------------------|
@@ -95,7 +95,7 @@ Buy/sell:
 
 # How to Play
 
-## ⌨️ Controls
+## Controls
 
 | Key | Action     | Description              |
 |-----|------------|--------------------------|
@@ -107,7 +107,7 @@ Buy/sell:
 | I   | Info       | Show stats and inventory |
 | Q   | Quit       | Exit game                |
 
-## ⚔️ Combat System
+## Combat System
 
 | Action     | Description                                |
 |------------|--------------------------------------------|
@@ -121,7 +121,7 @@ Buy/sell:
 - **Ice** → Lowers enemy damage  
 - **Lightning** → Lowers enemy dodge  
 
-### ⚖️ Mechanics & Balance
+### Mechanics & Balance
 - Dodge scales from Agility (capped at ~60–75%)  
 - Level Ups increase stats by 5% (favored +10%)  
 - Selling returns 50% of item value  
@@ -306,7 +306,7 @@ Action: a
 
 ---
 
-## 💥 Ambush Encounter!
+## Ambush Encounter!
 
 ```
 *** AMBUSH! You have encountered monsters! ***
@@ -318,7 +318,7 @@ Action: a
 
 ---
 
-## ⚔️ Battle – Round 1
+## Battle – Round 1
 
 ### Flandal_Steelskin's Turn
 
@@ -354,7 +354,7 @@ Sehanine_Moonbow has fainted!
 
 ---
 
-## ☠️ Party Defeated
+## Party Defeated
 
 ```
 The party has been defeated!
@@ -378,7 +378,7 @@ Game Over. Thanks for playing Legends: Monsters and Heroes!
 
 ---
 
-## 🔁 Replay Prompt
+## Replay Prompt
 
 ```
 Do you want to play again? (y/n): n
@@ -387,5 +387,6 @@ Goodbye!
 
 ```
 ---
+```
 
 Enjoy your adventure in Legends!
