@@ -191,8 +191,9 @@ The project follows a strict **Model-View-Controller (MVC)** inspired architectu
 
 # Example Gameplay
 
+## 🌍 Game Start
+
 ```
-➜  heroes-and-monster git:(main) mkdir -p bin && javac -d bin src/**/*.java && java -cp bin Main
 Initializing Game Engine...
 Loading Game Data...
 
@@ -201,14 +202,23 @@ Enter board size (4-20): 4
 
 --- Hero Selection ---
 Enter party size (1-3): 2
+```
 
+---
+
+## 🧝 Hero #1 Selection
+
+```
 Select Hero #1:
 1. Warrior (Favors Strength/Agility)
 2. Sorcerer (Favors Dexterity/Agility)
 3. Paladin (Favors Strength/Dexterity)
 Choose class: 1
+```
 
-Available Heroes:
+### Available Heroes
+
+```
 +----+----------------------+-----+------+------+------+------+------+
 | ID | NAME                 | LVL | HP   | MP   | STR  | DEX  | AGI  |
 +----+----------------------+-----+------+------+------+------+------+
@@ -220,9 +230,160 @@ Available Heroes:
 | 6  | Eunoia_Cyn           | 1   | 100  | 400  | 700  | 600  | 800  |
 +----+----------------------+-----+------+------+------+------+------+
 7. Quit Game
-Select hero ID: 2
+Select hero ID: 4
+```
 
-.......
+---
+
+## ⚔️ Hero #2 Selection
+
+```
+Select Hero #2:
+1. Warrior (Favors Strength/Agility)
+2. Sorcerer (Favors Dexterity/Agility)
+3. Paladin (Favors Strength/Dexterity)
+Choose class: 3
+```
+
+### Available Heroes
+
+```
++----+----------------------+-----+------+------+------+------+------+
+| ID | NAME                 | LVL | HP   | MP   | STR  | DEX  | AGI  |
++----+----------------------+-----+------+------+------+------+------+
+| 1  | Parzival             | 1   | 100  | 300  | 750  | 700  | 650  |
+| 2  | Sehanine_Moonbow     | 1   | 100  | 300  | 750  | 700  | 700  |
+| 3  | Skoraeus_Stonebones  | 1   | 100  | 250  | 650  | 350  | 600  |
+| 4  | Garl_Glittergold     | 1   | 100  | 100  | 600  | 400  | 500  |
+| 5  | Amaryllis_Astra      | 1   | 100  | 500  | 500  | 500  | 500  |
+| 6  | Caliber_Heist        | 1   | 100  | 400  | 400  | 400  | 400  |
++----+----------------------+-----+------+------+------+------+------+
+7. Quit Game
+Select hero ID: 2
+```
+
+---
+
+## 🌎 Entering the World
+
+```
+The party enters the world...
++---+---+---+---+
+| P | . | . | X |
++---+---+---+---+
+| . | M | X | . |
++---+---+---+---+
+| X | X | . | . |
++---+---+---+---+
+| . | . | . | M |
++---+---+---+---+
+```
+
+### Party Status
+
+```
++------------------------------------------------------------+
+|                        PARTY STATUS                        |
++----------------------+-------+--------+--------+-----------+
+| NAME                 | LVL   | HP     | MP     | GOLD      |
++----------------------+-------+--------+--------+-----------+
+| Flandal_Steelskin    | 1     | 100    | 200    | 2500      |
+| Sehanine_Moonbow     | 1     | 100    | 300    | 2500      |
++------------------------------------------------------------+
+CONTROLS: [W]Up [A]Left [S]Down [D]Right  [M]Market [I]Info [Q]Quit
+```
+
+---
+
+## ➡ Movement Log
+
+```
+Action: d
+Action: d
+Action: a
+Action: a
+```
+
+---
+
+## 💥 Ambush Encounter!
+
+```
+*** AMBUSH! You have encountered monsters! ***
+
+*** Battle Started! Enemies approaching: ***
+- [SPIRIT] Andrealphus (Lvl 1) | HP: 100 | Dmg: 300
+- [DRAGON] TheScaleless (Lvl 1) | HP: 100 | Dmg: 100
+```
+
+---
+
+## ⚔️ Battle – Round 1
+
+### Flandal_Steelskin's Turn
+
+```
+Action: 1
+Select Target:
+1. Andrealphus
+2. TheScaleless
+Target: 1
+Flandal_Steelskin attacks Andrealphus for 25 damage!
+```
+
+### Sehanine_Moonbow's Turn
+
+```
+Action: 1
+Select Target:
+1. Andrealphus
+2. TheScaleless
+Target: 1
+Sehanine_Moonbow attacks Andrealphus for 25 damage!
+```
+
+### Enemy Turn
+
+```
+Andrealphus attacks Flandal_Steelskin for 300 damage!
+Flandal_Steelskin has fainted!
+
+TheScaleless attacks Sehanine_Moonbow for 100 damage!
+Sehanine_Moonbow has fainted!
+```
+
+---
+
+## ☠️ Party Defeated
+
+```
+The party has been defeated!
+Game Over Condition Met.
+
+Game Over. Thanks for playing Legends: Monsters and Heroes!
+```
+
+### Final Status
+
+```
++------------------------------------------------------------+
+|                        PARTY STATUS                        |
++----------------------+-------+--------+--------+-----------+
+| NAME                 | LVL   | HP     | MP     | GOLD      |
++----------------------+-------+--------+--------+-----------+
+| Flandal_Steelskin    | 1     | 0      | 200    | 2500      |
+| Sehanine_Moonbow     | 1     | 0      | 300    | 2500      |
++------------------------------------------------------------+
+```
+
+---
+
+## 🔁 Replay Prompt
+
+```
+Do you want to play again? (y/n): n
+Goodbye!
+```
 
 ```
 ---
