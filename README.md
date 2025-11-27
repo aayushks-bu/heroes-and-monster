@@ -385,8 +385,4 @@ Do you want to play again? (y/n): n
 Goodbye!
 ```
 
-```
----
-```
-
 Enjoy your adventure in Legends!
