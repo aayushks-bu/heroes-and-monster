@@ -136,11 +136,7 @@ Buy/sell:
 
 ## Compile and Run
 ```bash
-javac -d bin src/Main.java src/common/*.java src/game/*.java \
-src/utils/*.java src/items/*.java src/entities/*.java src/board/*.java
-
-# Run after compiling
-java -cp bin Main
+mkdir -p bin && javac -d bin src/**/*.java && java -cp bin Main
 ```
 
 # Design Pattern
