@@ -188,6 +188,43 @@ The project follows a strict **Model-View-Controller (MVC)** inspired architectu
 - **LegendsBoard.java**: Handles grid logic and pretty-printing.  
 - **CellType.java**: Enum defining grid symbols and colors.  
 
+
+# Example Gameplay
+
+```
+➜  heroes-and-monster git:(main) mkdir -p bin && javac -d bin src/**/*.java && java -cp bin Main
+Initializing Game Engine...
+Loading Game Data...
+
+--- World Generation ---
+Enter board size (4-20): 4
+
+--- Hero Selection ---
+Enter party size (1-3): 2
+
+Select Hero #1:
+1. Warrior (Favors Strength/Agility)
+2. Sorcerer (Favors Dexterity/Agility)
+3. Paladin (Favors Strength/Dexterity)
+Choose class: 1
+
+Available Heroes:
++----+----------------------+-----+------+------+------+------+------+
+| ID | NAME                 | LVL | HP   | MP   | STR  | DEX  | AGI  |
++----+----------------------+-----+------+------+------+------+------+
+| 1  | Gaerdal_Ironhand     | 1   | 100  | 100  | 700  | 600  | 500  |
+| 2  | Sehanine_Monnbow     | 1   | 100  | 600  | 700  | 500  | 800  |
+| 3  | Muamman_Duathall     | 1   | 100  | 300  | 900  | 750  | 500  |
+| 4  | Flandal_Steelskin    | 1   | 100  | 200  | 750  | 700  | 650  |
+| 5  | Undefeated_Yoj       | 1   | 100  | 400  | 800  | 700  | 400  |
+| 6  | Eunoia_Cyn           | 1   | 100  | 400  | 700  | 600  | 800  |
++----+----------------------+-----+------+------+------+------+------+
+7. Quit Game
+Select hero ID: 2
+
+.......
+
+```
 ---
 
 Enjoy your adventure in Legends!
